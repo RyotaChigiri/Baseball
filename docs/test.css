@@ -1,0 +1,17 @@
+
+.adress2{
+    width: 200px
+    border 1px solid;
+    font-size: 20px;
+}
+
+
+.text{
+    width: 200px
+    border 2px solid;
+    font-size: 20px;
+}
+
+body {
+	background-color: rgb(119, 245, 102);
+}

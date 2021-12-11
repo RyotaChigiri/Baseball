@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>プロ野球球団別株価推移可視化サイト</title>
+</head>
+<body>
+    <h1>プロ野球球団別株価可視化サイト</h1>
+    <h2>見たいものを選ぶとその移動平均線の推移と出来高が見れるよ!</h2>
+    <h3>移動平均線・・ある一定期間の価格から平均値を計算し、折れ線グラフで表したもの。</h3>
+    <select class="adress2" id="adress" onchange="myfunc(this,project1)">
+        <optgroup label="直近1年間">
+        <option value="1" selected>選択してください</option>
+        <option value="2">横浜Denaベイスターズ</option>
+        <option value="3">ソフトバンク</option>
+        <option value="4">オリックス</option>
+        <option value="5">ヤクルト</option>
+        <option value="6">阪神</option>
+        </optgroup>
+        <optgroup label="直近2年間">
+        <option value="7">横浜Danaベイスターズ</option>
+        <option value="8">ソフトバンク</option>
+        <option value="9">オリックス</option>
+        <option value="10">ヤクルト</option>
+        <option value="11">阪神</option>
+        </optgroup>
+    </select>
+
+    <!--画像を配置-->
+    <P><IMG src="first.png" width=40% height=30% id="project1" alt=""></p>
+        <!--ドロップダウンメニューが変更されたら関数へ値を渡す-->
+
+    <h2>見たいものを選ぶと移動平均線の高低時に各球団が何をしていたのかが見れるよ!</h2>
+
+    <select class="text" id="adress1" onchange="myfunc1()">
+        <optgroup label="直近1年間">
+        <option value="文章1" selected>選択してください</option>
+        <option value="文章2">横浜Denaベイスターズ</option>
+        <option value="文章3">ソフトバンク</option>
+        <option value="文章4">オリックス</option>
+        <option value="文章5">ヤクルト</option>
+        <option value="文章10">阪神</option>
+        </optgroup>
+        <optgroup label="直近3年間">
+        <option value="文章6">横浜Danaベイスターズ</option>
+        <option value="文章7">ソフトバンク</option>
+        <option value="文章8">オリックス</option>
+        <option value="文章9">ヤクルト</option>
+        <option value="文章11">阪神</option>
+        </optgroup>
+    </select>
+    <p id="target"></p>
+
+<script type="text/javascript" src="test.js"></script>
+
+</body>
+</html>
