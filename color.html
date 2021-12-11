@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+    <FORM>
+        <!--画像を配置-->
+        <P><IMG src="2267_JP.png" width="120" height="120" id="program1" alt=""></p>
+        <!--ドロップダウンメニューが変更されたら関数へ値を渡す-->
+        <P>
+            <SELECT name="channel" size="1" onchange="imgChange(this,program1)">
+                <OPTION value="0">レッド
+                <OPTION value="1">オレンジ
+                <OPTION value="2">グリーン
+                <OPTION value="3">ブルー
+                <OPTION value="4">グレー
+            </SELECT>
+        </P>
+        <P><IMG src="2267JP.png" width="120" height="120" id="program2" alt=""></p>
+        <P>
+            <SELECT name="channel" size="1" onchange="imgChange(this,program2)">
+                <OPTION value="0">レッド
+                <OPTION value="1">オレンジ
+                <OPTION value="2">グリーン
+                <OPTION value="3">ブルー
+                <OPTION value="4">グレー
+            </SELECT>
+        </P>
+    </FORM>
+    <script>
+        function imgChange(parts, id) {
+            /*選択されているメニューを変数へ格納*/
+            fname = parts.options[parts.selectedIndex].value;
+            /*選択された画像のパスを送る*/
+            if (fname == 0) id.src = "first.png";
+            if (fname == 1) id.src = "2432JP.png";
+            if (fname == 2) id.src = "8591_JP.png";
+            if (fname == 3) id.src = "8591JP.png";
+            if (fname == n) id.src = "9434JP.png";
+        }
+    </script>
+</body>
